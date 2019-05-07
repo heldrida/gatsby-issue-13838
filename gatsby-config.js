@@ -12,7 +12,7 @@ module.exports = {
         typeName: "WPCMS",
         // This is field under which it's accessible
         fieldName: "wpcms",
-        url: 'https://www.wpgraphql.com/graphql', // SET YOURS
+        url: 'https://demo.wpgraphql.com/graphql', // SET YOURS
         refetchInterval: 240
       },
     },
