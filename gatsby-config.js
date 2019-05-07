@@ -5,6 +5,17 @@ module.exports = {
     author: `@gatsbyjs`,
   },
   plugins: [
+    {
+      resolve: "gatsby-source-graphql",
+      options: {
+        // This type will contain remote schema Query type
+        typeName: "WPCMS",
+        // This is field under which it's accessible
+        fieldName: "wpcms",
+        url: 'https://www.wpgraphql.com/graphql', // SET YOURS
+        refetchInterval: 240
+      },
+    },
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
